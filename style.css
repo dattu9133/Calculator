@@ -1,0 +1,105 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to left top, #64cae6, #81de7d);
+  color: white;
+}
+
+.main {
+  width: fit-content;
+  height: fit-content;
+  background-color: beige;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:425px) {
+  .main {
+    transform: scale(0.8);
+  }
+}
+
+.header {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 0;
+  letter-spacing: 3px;
+}
+
+.calculator-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: all 0.2s ease;
+}
+
+.calculator-button:hover {
+  opacity: 1;
+  border: 1px solid white;
+}
+
+
+.js-calculation {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 5px;
+  padding-left: 15px;
+  width: 240px;
+  background-color: white;
+  height: fit-content;
+  min-height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.current,
+.previous {
+
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-weight: 50;
+  margin: 0;
+}
+
+
+
+.previous {
+  font-size: 15px;
+}
+
+
+
+.gray-button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+.orange-button {
+  background-color: rgb(254, 160, 10);
+  color: white;
+  margin-right: 0;
+}
+
+.clear-button,
+.delete-button {
+  font-size: 17px;
+}
