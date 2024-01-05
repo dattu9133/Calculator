@@ -23,4 +23,5 @@ To use the calculator:
 
 ## How It Works
 
-The calculator app uses HTML for the structure, CSS for styling, and JavaScript for functionality. The arithmetic operations are performed using JavaScript functions. The code has been updated to avoid using `eval` for calculations, which improves security and reduces the risk of unexpected behavior. Additionally, handling of floating-point numbers has been improved to address potential precision issues.Javascript considers all numeric values as `number` data type, this may cause problem while the floating numbers multiplication and division. I kind of overcomed it in this, feel free to see `script.js` file for it.
+The calculator app uses HTML for the structure, CSS for styling, and JavaScript for functionality. The arithmetic operations are performed using JavaScript functions. The code has been updated to avoid using `eval` for calculations, which improves security and reduces the risk of unexpected behavior. Additionally, handling of floating-point numbers has been improved to address potential precision issues.Javascript considers all numeric values as `number` data type, this may cause problem while the floating numbers multiplication and division. I kind of overcomed it in this, feel free to see `script` tag in `index.html`.
+for it.
