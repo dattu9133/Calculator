@@ -142,13 +142,7 @@
         return
 
       else if (value !== '.' && isNaN(value)) {
-        if (currentOperand.innerHTML === '') {
-          calculation = calculation + value;
-          displayCalculation();
-          localStorage.setItem('calculation', calculation);
-          return
-        }
-        else if (previousOperand.innerHTML === '') {
+        if (previousOperand.innerHTML === '') {
           previousOperand.innerHTML = currentOperand.innerHTML + value;
           // calculation = '';
           prevDecimalDigits = previousOperand.innerHTML.split('.')[previousOperand.innerText.split('.').length - 1].length - 3 || null;
@@ -160,9 +154,7 @@
             previousOperand.innerHTML = calculation + value;
           }
         }
-
         calculation = '';
-
       }
       else {
         calculation += value;
@@ -177,7 +169,7 @@
       currentOperand.innerHTML = calculation;
     }
 
-    </script>
+  </script>
 </body>
 
 </html>
