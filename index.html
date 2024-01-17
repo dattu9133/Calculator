@@ -144,7 +144,6 @@
       else if (value !== '.' && isNaN(value)) {
         if (previousOperand.innerHTML === '') {
           previousOperand.innerHTML = currentOperand.innerHTML + value;
-          // calculation = '';
           prevDecimalDigits = previousOperand.innerHTML.split('.')[previousOperand.innerText.split('.').length - 1].length - 3 || null;
         }
         else {
